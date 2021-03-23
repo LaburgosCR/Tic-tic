@@ -63,9 +63,12 @@ export default class Game extends React.Component {
 		}
 
 		return (
-			<div className="game">div className="game-board">
+			<div className="game">
+				{" "}
+				<div className="game-board">
 					<Board
-                    img						onClick={i => this.handleClick(i)}
+						img
+						onClick={i => this.handleClick(i)}
 						square={current.squares}
 					/>
 				</div>
@@ -73,6 +76,7 @@ export default class Game extends React.Component {
 					<div>{status}</div>
 					<ul>{moves}</ul>
 				</div>
+				//{" "}
 			</div>
 		);
 	}
